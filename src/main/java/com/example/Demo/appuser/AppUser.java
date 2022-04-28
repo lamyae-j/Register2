@@ -42,10 +42,10 @@ public class AppUser implements UserDetails {
 
     public AppUser(String firstname, String lastName, String email, String password, AppUserRole user) {
         this.firstname = firstname;
-        this.lastname = lastname;
+        this.lastname = lastName;
         this.email = email;
         this.password = password;
-        this.appUserRole = appUserRole;
+        this.appUserRole = user;
     }
 
     @Override
